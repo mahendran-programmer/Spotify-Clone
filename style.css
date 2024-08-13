@@ -1,0 +1,369 @@
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+/* Making body background Black */
+body{
+    background: black;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+/* Sidebar Style */
+.sidebar{
+    width: 320px;
+    background: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    padding: 10px;
+}
+.sidebar-nav{
+    border-radius: 10px;
+    background: rgb(14, 14, 14);
+    padding: 10px 20px;
+    margin-bottom: 10px;
+}
+.sidebar-nav .logo{
+    width: 120px;
+}
+.sidebar-nav .logo img{
+    width: 100%;
+}
+.sidebar-nav ul{
+    list-style: none;
+}
+.sidebar-nav ul li{
+    padding: 10px ;
+}
+.sidebar-nav ul li a{
+    text-decoration: none;
+    color: #b3b3b3;
+    font-size: 16px;
+    font-weight: 600;
+}
+.sidebar-nav ul li a i{
+    font-size: 20px;
+    margin-right: 10px;
+}
+.library::after{
+    content: '+';
+    float: right;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.create-playlist{
+    background: rgb(39, 38, 38);
+    padding: 30px 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    color: white;
+}
+.create-playlist p{
+    margin: 12px 0;
+    font-size: 12px;
+}
+.create-playlist button{
+    padding: 8px 15px;
+    border: 0;
+    outline: 0;
+    font-weight: 600;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+
+.sidebar-scroll{
+    height: 50px;
+    overflow-y: auto;
+}
+.sidebar-scroll::-webkit-scrollbar{
+    background: transparent;
+}
+.sidebar-scroll::-webkit-scrollbar-thumb{
+    background: transparent;
+    width: 10px;
+}
+.sidebar-scroll:hover::-webkit-scrollbar-thumb{
+    background: grey;
+    width: 10px;
+}
+.privacy ul li a{
+    text-decoration: none;
+    color:#b3b3b3;
+    font-size: 12px;
+  
+    margin: 0 5px;
+}
+.privacy ul{
+    list-style: none;
+}
+.privacy ul li{
+    padding-bottom: 5px;
+}
+.privacy{
+    padding: 0 10px;
+    margin-top: 30px;
+}
+.Cookies{
+   
+    padding: 0 10px;
+    margin-top: 10px;
+
+}
+.Cookies  a{
+    font-size: 13px;
+    color:#b3b3b3;
+    text-decoration: none;
+}
+.Cookies  a:hover{
+    text-decoration: underline;
+}
+.eng-btn{
+    padding: 20px 30px;
+}
+.eng-btn button{
+    padding: 10px 30px;
+    background:transparent;
+    color: white;
+    border-radius: 20px;
+    border: 0;
+    outline: none;
+    border: 1px solid #818080;
+    font-weight: 600;
+    margin: 20px 0;
+}
+.eng-btn button:hover{
+    padding: 11px 31px ;
+    border: 1px solid #fff;
+}
+/* Main Section Style */
+.main-section{
+    margin-left: 320px;
+    background: #181818;
+    height: 100vh;
+    overflow: auto;
+}
+.main-section .top-nav{
+    padding: 20px 30px;
+    background: #121212;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.main-section .top-nav button{
+    background: transparent;
+    border: 0;
+    outline: none;
+    border-radius: 100%;
+
+}
+.main-section .top-nav .prev-but i{
+   color: #b3b3b3;
+   font-size: 22px;
+   
+   margin-right: 20px;
+
+}
+.top-nav .login-btn .sign-up{
+    color: #b3b3b3;
+    font-size: 16px;
+    font-weight: 600;
+    margin-right: 15px;
+ 
+ }
+ .top-nav .login-btn .sign-up:hover{
+    color:white;
+   
+ 
+ }
+ .top-nav .login-btn .login{
+    
+    font-size: 16px;
+    background: #fff;
+    color: black;
+    border-radius: 20px;
+    padding: 10px 15px;
+    font-weight: 600;
+
+ 
+ }
+ .top-nav .login-btn .login:hover{
+  
+    padding: 11px 16px ;
+    border: 1px solid #fff; 
+ }
+ .spotify-playlist{
+    padding: 20px 40px;
+
+ }
+ h2{
+    color: white;
+    font-size: 22px;
+    margin-bottom: 20px;
+ }
+ .spotify-playlist .card{
+    display: flex;
+    gap: 20px;
+    overflow: hidden;
+ }
+ .spotify-playlist .card .item{
+    width: 160px;
+    min-width: 140px;
+    
+    cursor: pointer; 
+    padding: 15px;
+    border-radius: 6px; 
+ }
+ .spotify-playlist .card .item:hover{
+    background: #3b3939;
+ }
+ .spotify-playlist .card .item img{
+    width: 100%;
+    border-radius: 6px;
+    margin-bottom: 10px; 
+ }
+ .spotify-playlist .card .item h4{
+    color: white;
+
+ }
+.spotify-playlist .card .item p{
+    color: grey;
+    font-size: 13px;
+    margin-top: 10px;
+    
+ }
+ .spotify-playlist .card .item p:hover{
+    text-decoration: underline;
+    
+ }
+ .spotify-playlist .play-button{
+    position: relative;
+ }
+ .spotify-playlist .play-button i{
+    position: absolute;
+    background: rgb(41, 189, 41);
+    border-radius: 50%;
+    padding: 10px;
+    right: 5px;
+    top: -60px;
+    opacity: 0;
+    transform: 0.3s ease all;
+ }
+ .spotify-playlist .card .item:hover .play-button i{
+    opacity: 1;
+ }
+ .spotify-playlist .card .item1{
+    width: 160px;
+    min-width: 140px;
+    
+    cursor: pointer; 
+    padding: 15px;
+    border-radius: 6px; 
+ }
+ .spotify-playlist .card .item1:hover{
+    background: #3b3939;
+ }
+ .spotify-playlist .card .item1 img{
+    width: 100%;
+    border-radius: 100%;
+    margin-bottom: 10px; 
+ }
+ .spotify-playlist .card .item1 h4{
+    color: white;
+
+ }
+.spotify-playlist .card .item1 p{
+    color: grey;
+    font-size: 13px;
+    margin-top: 10px;
+    
+ }
+ .spotify-playlist .card .item1 p:hover{
+    text-decoration: underline;
+    
+ }
+ .spotify-playlist .card .item1:hover .play-button i{
+    opacity: 1;
+ }
+ .spotify-playlist h2:hover{
+    text-decoration: underline;
+    cursor: pointer;
+ }
+.spotify-playlist h2{
+    display: inline-block;
+    margin-right: 550px;
+}
+.spotify-playlist button{
+    background: #181818;
+    color: #b3b3b3;
+    border: 0;
+    outline: none;
+    font-weight: 600;
+}
+.spotify-playlist button:hover{
+    text-decoration: underline;
+}
+/* Footer Style */
+.footer-link{
+    display: flex;
+    margin-top: 20px;
+    padding: 10px;
+}
+.footer-link .footer-column{
+    width: 160px;
+    min-width: 140px;
+    padding: 15px;
+    margin-left: 25px;
+}
+.footer-link .buttons{
+    width: 160px;
+    min-width: 140px;
+    padding: 15px;
+   
+}
+.footer-link .buttons button{
+    background: rgb(35, 33, 33);
+    color: white;
+    border: 0;
+    outline: none;
+    padding: 10px;
+    border-radius: 100%;
+}
+.footer-link .buttons button:hover{
+    background: #3b3939;
+}
+.footer-column{
+    color: white;
+    font-weight: 600;
+}
+.col-link{
+    margin-top: 10px;
+    list-style-type: none;
+}
+.col-link li{
+    margin-bottom: 10px;
+}
+
+.col-link li a{
+    text-decoration: none;
+    color: #b3b3b3;
+    padding: 5px;
+    
+    font-weight: 200;
+    font-size: 15px;
+}
+.col-link li a:hover{
+    text-decoration: underline ;
+    color: #fff;
+    
+}
+
+
+
+
+
